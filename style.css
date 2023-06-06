@@ -7,20 +7,31 @@
 body {
 background-image: url(./assets/bg.png);
 background-size: cover;
-width: 1366px;
+/* width: 1366px; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
     margin-left: 32px;
     margin-top: 20px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
     height: 40px;
-    border-right: 2px solid;
-    border-right-color: #ffffff;
+    /* border-right: 2px solid; */
+    /* border-right-color: #ffffff; */
+}
+.line{
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 1vw;
+
 }
 nav {
     display: flex;
     background-color: black;
-    max-width: 1366px;
+    /* max-width: 1366px; */
     padding-top: 0px;
     padding-bottom: 2px;
 
@@ -38,18 +49,21 @@ nav {
     list-style: none;
 }
 .list-item {
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    margin: 1vw;
     margin-top: 25px;
     font-size: 16px;
+    cursor: pointer;
 }
 .button-small{
     background-color: #d711ff;
     margin-top: 20px;
     color: white; 
-    margin-left: 280px;
+    /* margin-left: 280px; */
     padding: 5px 22px;
     cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
 }
 .vertical{
     margin-top: 0px;
@@ -67,7 +81,8 @@ nav {
     cursor: pointer;
     font-size: 25px;
     border: none;
-    font-weight: 500;   
+    font-weight: 500;  
+    cursor: pointer; 
 }
 .hero{
     display: flex;
@@ -85,4 +100,9 @@ nav {
 }
 .hero-description{
     font-size: 32px;
+}
+@media (max-width:640px) {
+    .list{
+        flex-direction: column;
+    }
 }
